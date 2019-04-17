@@ -14,7 +14,7 @@ spring:
       username: root
       password: 644886
   application:
-    name: springcloud-server-config
+    name: cloud-server-config
   profiles:
     active: dev
 
