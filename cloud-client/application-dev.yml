@@ -6,19 +6,19 @@ spring:
   profiles:
     active: dev
 
-#feign:
-#  hystrix:
-#    enabled: true
-#ribbon:
-#  ReadTimeout:  30000
-#  ConnectTimeout:  15000
-#hystrix:
-#  command:
-#    default:
-#      execution:
-#        isolation:
-#          thread:
-#            timeoutInMilliseconds: 100000
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+  ReadTimeout:  30000
+  ConnectTimeout:  15000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
 
 logging:
   config: classpath:logback.xml
