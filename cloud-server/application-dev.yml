@@ -18,8 +18,8 @@ spring:
   profiles:
     active: dev
 
-#logging:
-#  config: classpath:logback.xml
+logging:
+  config: logback.xml
 #  level:
 #    root: info
 #    org.hibernate : info
