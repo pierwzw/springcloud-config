@@ -1,7 +1,10 @@
 # hystrix.command.default.execution.timeout.enabled: false
 #hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 80000
-logging:
-  config: classpath:logback.xml
+spring:
+  application:
+    name: cloud-client-config
+    profiles:
+      active: dev
 
 feign:
   hystrix:
@@ -16,3 +19,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 100000
+
+logging:
+  config: classpath:logback.xml
