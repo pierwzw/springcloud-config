@@ -1,0 +1,31 @@
+spring:
+  redis:
+    host: aliyun
+    #assword: 123456
+    port: 6379
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+  datasource:
+    druid:
+      url: jdbc:mysql://aliyun:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root
+      password: 644886
+  application:
+    name: springcloud-server-config
+  profiles:
+    active: dev
+
+logging:
+  config: classpath:logback.xml
+  level:
+    root: info
+#    org.hibernate : info
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+#    com.yasaka.stock : debug
+
+server:
+  port: 8100
