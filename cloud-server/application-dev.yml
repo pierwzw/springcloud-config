@@ -19,7 +19,7 @@ spring:
     active: dev
 
 logging:
-  config: logback.xml
+  config: classpath:logback.xml
 #  level:
 #    root: info
 #    org.hibernate : info
