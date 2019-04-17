@@ -18,10 +18,10 @@ spring:
   profiles:
     active: dev
 
-logging:
-  config: classpath:logback.xml
-  level:
-    root: info
+#logging:
+#  config: classpath:logback.xml
+#  level:
+#    root: info
 #    org.hibernate : info
 #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 #    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
