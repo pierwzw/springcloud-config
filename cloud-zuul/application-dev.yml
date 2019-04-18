@@ -5,8 +5,8 @@ spring:
     active: dev
 zuul:
   routes:
-    cloud-client: /client/**
-    cloud-server: /server/**
+    cloud-client-config: /client/**
+    cloud-server-config: /server/**
 #hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 80000
 hystrix:
   command:
